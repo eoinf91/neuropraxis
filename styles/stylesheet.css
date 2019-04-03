@@ -6,11 +6,75 @@
 header{
     width: 100vw;
     height: 100vh;
+}
+
+header#home{
     background: url(../links/jesse_m_homepage_header_bg_mob.jpg);
     background-size: cover;
     background-position: top right;
     position: relative;
     background-repeat: no-repeat;
+}
+
+header#services-page,
+header#products-page{
+    background: url(../links/services_header_bg_mob.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+header#products-page{
+    background: 
+        linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+        url(../links/products_header_bg_mob.jpg);
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+header#about #header-content{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header#about #header-content h1.about-h1{
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: none;
+    color: #41444A;
+    font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+    margin: 0px auto 40px;
+}
+
+header#services-page h1,
+header#products-page h1{
+    width: 85%;
+}
+
+header#about #header-content p{
+    font-family: 'Magneta', serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #548f9c;
+    line-height: 18px;
+    margin: 10px auto;
+}
+
+header#blog{
+    width: 100vw;
+    height: auto;
 }
 
 header img.main-logo{
@@ -138,11 +202,18 @@ p{
     line-height: 28px;
     color: #41444a;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+p:last-of-type{
+    margin-bottom: 0px;
 }
 
 #programs,
 #blog-catchup,
-#contact-us{
+#contact-us,
+#mission,
+#qualifying{
     padding: 30px;
     box-sizing: border-box;
     text-align: center;
@@ -277,6 +348,185 @@ footer p a{
     font-size: 12px;
     text-decoration: none;
     color: #41444A;
+    margin: 0px;
+}
+
+#testimonials{
+    width: 100vw;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#testimonials #three-col .three-col-content{
+    margin: 0px auto 40px;
+    text-align: center;
+}
+
+#testimonials #three-col .three-col-content img{
+    width: 100%;
+    height: auto;
+    margin: 0px auto 10px;
+}
+
+#testimonials #three-col .three-col-content a.cta{
+    margin: 20px auto;
+}
+
+#testimonials #testimonials-text .testimonial-text-content{
+    margin: 0px auto 50px;
+}
+
+#services-3-col .services-3-col-item{
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin: 10px auto 30px;
+    background-color: #f2f7f8;
+}
+
+#services-3-col .services-3-col-item img{
+    width: auto;
+    height: 65px;
+    margin: 0px auto 10px;
+}
+
+#services-3-col .services-3-col-item h4{
+    font-size: 18px;
+    margin: 10px auto 20px;
+}
+
+#services-3-col .services-3-col-item p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#products-2-col #products-imagery{
+    display: none;
+}
+
+#products-2-col #products-detail .products-detail-text{
+    margin: 0px auto 50px;
+}
+
+#products-2-col #products-detail .products-detail-text:last-child{
+    margin: 0px auto 0px;
+}
+
+ol{
+    padding: 0px 20px;
+}
+
+ol li{
+    font-family: 'Magneta', serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #41444a;
+    text-align: left;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #548f9c;
+}
+
+ol.sublist{
+    padding-left: 15px;
+}
+
+ol.sublist li{
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #41444a;
+    text-align: left;
+    margin-bottom: 20px;
+    list-style: lower-alpha;
+    text-transform: none;
+}
+
+#blog-list{
+    padding: 150px 20px 20px;
+    box-sizing: border-box;
+}
+
+#blog-list #blog-content #blog-content-container{
+    text-align: center;
+}
+
+#blog-list #blog-content #blog-content-container .blog-content-item{
+    margin: 20px auto;
+}
+
+#blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-image{
+    width: 100%;
+    height: 250px;
+    margin: 0px auto 20px;
+}
+
+#blog-list #blog-content #blog-content-container .blog-content-item .cta{
+    margin: 20px auto;
+}
+
+#blog-list #blog-links{
+    display: none;
+}
+
+#blog-post{
+    padding: 150px 20px 20px;
+    box-sizing: border-box;
+}
+
+#blog-post h1{
+    font-family: magneta, serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #548f9c;
+    font-size: 24px;
+    width: 100%;
+    line-height: 36px;
+    letter-spacing: 2px;
+    margin: 0px 0px 15px;
+    text-align: center;
+}
+
+#blog-post h2{
+    font-family: magneta, serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #41444A;
+    font-size: 18px;
+    width: 100%;
+    line-height: 26px;
+    letter-spacing: 2px;
+    margin: 0px 0px 25px;
+    text-align: center;
+}
+
+#blog-post .blog-post-image{
+    width: 100%;
+    height: 250px;
+    margin: 25px 0px;
+}
+
+#blog-post p{
+    text-align: left;
+}
+
+#blog-post a{
+    display: block;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #548f9c;
+    text-align: left;
+    margin: 70px 0px 40px;
 }
 
 .cta-ghost{
@@ -309,7 +559,7 @@ footer p a{
 }
 
 @media only screen and (min-width: 768px){
-    header{
+    header#home{
         background-position: bottom right;
     }
 
@@ -321,6 +571,17 @@ footer p a{
     header #header-content{
         top: 220px;
         left: 50px;
+    }
+
+    header#about #header-content h1.about-h1{
+        font-size: 24px;
+        line-height: 38px;
+        width: 80%;
+    }
+
+    header#about #header-content p{
+        font-size: 18px;
+        line-height: 24px;
     }
 
     header h1{
@@ -354,7 +615,7 @@ footer p a{
     }
 
     h4{
-        font-size: 32px;
+        font-size: 28px;
         margin: 25px auto 10px;
     }
 
@@ -393,6 +654,105 @@ footer p a{
     #prefooter .prefooter-col ul.contact-detail{
         padding: 20px 0px;
         text-align: right;
+    }
+
+    #testimonials #three-col .three-col-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #testimonials #three-col .three-col-content img{
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+        margin: 0px 20px 0px 0px
+    }
+
+    #testimonials #three-col .three-col-content h4,
+    #testimonials #three-col .three-col-content h5,
+    #testimonials #three-col .three-col-content p{
+        text-align: left;
+    }
+    
+    #services-3-col{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    #services-3-col .services-3-col-item{
+        width: calc(100% / 2 - 30px);
+        height: auto;
+        display: block;
+    }
+
+    ol li{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    ol.sublist li{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #blog-list{
+        padding: 150px 20px 20px;
+        box-sizing: border-box;
+    }
+    
+    #blog-list #blog-content #blog-content-container{
+        text-align: left;
+    }
+    
+    #blog-list #blog-content #blog-content-container .blog-content-item{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+    
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-image{
+        width: 250px;
+        height: 350px;
+        margin: 0px 0px 20px;
+    }
+
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-text{
+        width: calc(100% - 300px);
+    }
+
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-text h4,
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-text h5,
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-text p{
+        text-align: left;
+    }
+    
+    #blog-list #blog-content #blog-content-container .blog-content-item .cta{
+        margin: 20px auto;
+    }
+    
+    #blog-list #blog-links{
+        display: none;
+    }
+
+    #blog-post{
+        padding: 200px 50px 50px;
+    }
+
+    #blog-post .blog-post-image{
+        height: 450px;
+    }
+
+    #blog-post a{
+        font-size: 18px;
+    }
+
+    #blog-post{
+        padding: 200px 75px 75px;
     }
 
     .cta{
@@ -434,16 +794,15 @@ footer p a{
     }
 }
 
-
-@media only screen and (min-width: 1366px){
-    header{
+@media only screen and (min-width: 1080px){
+    header#home{
         background: url(../links/jesse_m_homepage_header_bg.jpg);
         background-size: cover;
         background-position: right bottom;
     }
-    
+
     header img.main-logo{
-        width: 170px;
+        width: 130px;
         max-width: 170px;
         height: auto;
         position: absolute;
@@ -453,18 +812,36 @@ footer p a{
         margin: 0px;
         filter: none;
     }
+
+    header#services-page,
+    header#products-page{
+        background: url(../links/services_header_bg.jpg);
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    header#products-page{
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../links/products_header_bg.jpg);
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    header#services-page h1,
+    header#products-page h1{
+        width: 65%;
+    }
     
     nav{
         display: block;
-        width: 850px;
+        width: 700px;
         height: 50px;
-        padding: 15px 50px;
+        padding: 15px 0px;
         box-sizing: border-box;
         left: 50%;
         transform: translateX(-50%);
         background-color: #dee1e7;
     }
-    
+
     nav:before{
         position: absolute;
         width: 100%;
@@ -512,7 +889,7 @@ footer p a{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 150px;
+        left: 50px;
     }
     
     header h1{
@@ -561,7 +938,9 @@ footer p a{
 
     #programs,
     #blog-catchup,
-    #contact-us{
+    #contact-us,
+    #mission,
+    #qualifying{
         padding: 50px 100px;
         text-align: center;
     }
@@ -603,6 +982,112 @@ footer p a{
 
     #blog-catchup p{
         text-align: left;
+    }
+
+    #testimonials{
+        padding: 70px 100px;
+        box-sizing: border-box;
+    }
+
+    #testimonials #three-col{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    #testimonials #three-col .three-col-content{
+        display: block;
+        text-align: center;
+        width: calc(100% / 3 - 50px);
+    }
+
+    #testimonials #three-col .three-col-content img{
+        width: 100%;
+        margin: 0px auto 20px;
+    }
+
+    #testimonials #three-col .three-col-content h4,
+    #testimonials #three-col .three-col-content h5,
+    #testimonials #three-col .three-col-content p{
+        text-align: center;
+    }
+
+    #testimonials #testimonials-text .testimonial-text-content p{
+        text-align: left;
+    }
+
+    #services-3-col .services-3-col-item h4{
+        text-align: center;
+    }
+
+    #products-2-col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #products-2-col #products-imagery{
+        display: block;
+        width: 300px;
+    }
+
+    #products-2-col #products-imagery img{
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #products-2-col #products-detail{
+        width: calc(100% - 350px);
+        margin: 20px 0px;
+    }
+
+    #products-2-col #products-detail .products-detail-text h4,
+    #products-2-col #products-detail .products-detail-text p{
+        text-align: left;
+        margin: 0px 0px 20px;
+    }
+
+    #blog-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #blog-list #blog-content{
+        width: calc(100% - 350px);
+    }
+
+    #blog-list #blog-links{
+        display: block;
+        width: 200px;
+    }
+
+    #blog-list #blog-links .blog-links-item{
+        margin: 0px auto 40px;
+    }
+
+    #blog-list #blog-links h4{
+        text-align: right;
+        margin: 20px auto 10px;
+    }
+
+    #blog-list #blog-links ul{
+        text-align: right;
+        list-style: none;
+    }
+
+    #blog-list #blog-links ul li,
+    #blog-list #blog-links ul li a{
+        font-family: 'lato', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #41444A;
+        font-style: italic;
     }
     
     /* specific class styles */
@@ -649,11 +1134,75 @@ footer p a{
     }
 }
 
+@media only screen and (min-width: 1366px){
+    header img.main-logo{
+        width: 170px;
+    }
+    
+    nav{
+        width: 850px;
+        padding: 15px 50px;
+    }
+
+    #testimonials #three-col .three-col-content{
+        width: calc(100% / 3 - 100px);
+    }
+
+    #services-3-col .services-3-col-item{
+        width: calc(100% / 3 - 30px);
+        height: auto;
+        display: block;
+    }
+
+    #blog-list{
+        padding: 250px 100px 20px;
+    }
+
+    #blog-list #blog-content{
+        width: calc(100% - 250px);
+    }
+
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-image{
+        width: 300px;
+    }
+
+    #blog-list #blog-content #blog-content-container .blog-content-item .blog-content-item-text{
+        width: calc(100% - 400px);
+        align-self: center;
+    }
+
+    #blog-post .blog-post-image{
+        height: 550px;
+    }
+
+    #blog-post h1{
+        font-size: 32px;
+    }
+    
+    #blog-post h2{
+        font-size: 22px;
+    }
+}
+
 @media only screen and (min-width: 1920px){
     header h1{
         font-size: 54px;
         line-height: 70px;
         width: 65%;
+    }
+
+    #blog-list #blog-content #blog-content-container .blog-content-item{
+        width: calc(100% - 400px);
+        align-self: center;
+        margin: 50px 0px;
+    }
+
+    #blog-post{
+        padding: 200px 120px 70px;
+    }
+
+    #blog-post .blog-post-image{
+        height: 700px;
     }
 }
 
