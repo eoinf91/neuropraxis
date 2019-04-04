@@ -35,6 +35,16 @@ header#products-page{
     background-repeat: no-repeat;
 }
 
+header#about{
+    background: 
+        linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+        url(../links/about_header.jpg);
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
 header#about #header-content{
     width: 100%;
     position: relative;
@@ -48,7 +58,7 @@ header#about #header-content{
 
 header#about #header-content h1.about-h1{
     font-family: 'lato', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-style: italic;
     text-transform: none;
     color: #41444A;
