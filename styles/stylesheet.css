@@ -213,10 +213,16 @@ p:last-of-type{
 #blog-catchup,
 #contact-us,
 #mission,
-#qualifying{
+#qualifying,
+#contact-form,
+#contact-details{
     padding: 30px;
     box-sizing: border-box;
     text-align: center;
+}
+
+#contact-form{
+    text-align: left;
 }
 
 #programs .cta,
@@ -529,6 +535,68 @@ ol.sublist li{
     margin: 70px 0px 40px;
 }
 
+video{
+    margin-bottom: 50px;
+}
+
+form{
+    display: block;
+    width: 100%;
+}
+
+form .form-item label{
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #41444A;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 5px 20px;
+}
+
+form .form-item{
+    margin: 20px auto;
+}
+
+form .form-item:first-child{
+    margin: 0px auto 20px;
+}
+
+form .form-item input,
+form .form-item textarea{
+    display: block;
+    border: 1px solid #41444A;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+    font-weight: 500;
+    color: #41444A;
+    letter-spacing: 1px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+form .form-item input[type=submit]{
+    background-color: #DBC569;
+    border: none;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10px auto;
+    border-radius: 100px;
+}
+
+#contact-details .contact-detail{
+    margin: 30px auto;
+}
+
+#contact-details .contact-detail h4{
+    font-size: 18px;
+    margin: 0px auto 10px;
+}
+
 .cta-ghost{
     background-color: transparent;
     color: #DBC569;
@@ -755,6 +823,17 @@ ol.sublist li{
         padding: 200px 75px 75px;
     }
 
+    form .form-item label,
+    form .form-item input,
+    form .form-item textarea{
+        font-size: 18px;
+    }
+
+    form .form-item input[type=submit]{
+        width: 350px;
+        margin: 50px auto 20px;
+    }
+
     .cta{
         margin: 0px;
         display: inline-block;
@@ -940,7 +1019,9 @@ ol.sublist li{
     #blog-catchup,
     #contact-us,
     #mission,
-    #qualifying{
+    #qualifying,
+    #contact-form,
+    #contact-details{
         padding: 50px 100px;
         text-align: center;
     }
@@ -1089,6 +1170,57 @@ ol.sublist li{
         color: #41444A;
         font-style: italic;
     }
+
+    form .form-3-col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    form .form-3-col .form-item{
+        width: calc(100% / 3 - 50px);
+    }
+
+    form .form-item{
+        margin: 0px 0px 40px;
+    }
+
+    form .form-item:first-child{
+        margin: 0px;
+    }
+
+    form .form-item label{
+        text-align: left;
+    }
+
+    #contact-details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #contact-details .contact-detail{
+        width: calc(100% / 3 - 50px);
+    }
+
+    #contact-details .contact-detail p,
+    #contact-details .contact-detail h4{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    #contact-details .contact-detail:first-child p,
+    #contact-details .contact-detail:first-child h4{
+        text-align: left;
+    }
+
+    #contact-details .contact-detail:last-child p,
+    #contact-details .contact-detail:last-child h4{
+        text-align: right;
+    }
+
     
     /* specific class styles */
     .cta{
