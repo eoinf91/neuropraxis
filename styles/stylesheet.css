@@ -794,7 +794,7 @@ ol.sublist li{
     }
 }
 
-@media only screen and (min-width: 1080px){
+@media only screen and (min-width: 1024px){
     header#home{
         background: url(../links/jesse_m_homepage_header_bg.jpg);
         background-size: cover;
